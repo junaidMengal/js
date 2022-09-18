@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ms+Madi&display=swap');
+
+* {
+    font-family: 'open sans';
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    --egg:#49274a;
+    --sand:#f4decb;
+    --grape:#94618e;
+    --mustard:#e9b000;
+    --blush:#e86e80;
+    --aqua:#008f95;
+}
+
+/* body{
+    background-color: #c6d636;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.container{
+    background-color: white;
+    box-shadow: 3px 5px 8px rgba(0,0, 0, 0.3);
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    
+}
+h2{
+    text-align: center;
+    margin:40px 0px;
+}
+.form{
+    padding: 20px 0px ;
+    
+}
+.form-control{
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+.form-control label{
+    display: block;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #777;
+}
+.form-control input{
+    display: block;
+    width: 300px;
+    border: none;
+    background-color: #f1f4f5;
+    padding: 10px;
+    border-radius: 8px;
+}
+.form-control input:focus{
+    outline: 0;
+}
+button{
+    text-align: center;
+    width: 300px;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(188, 231, 231);
+    padding: 10px;
+    font-weight:bold;
+    color: rgb(102, 102, 102);
+    
+}
+.form-control.success input{
+    border: 1px solid green;
+}
+.form-control small{
+    visibility: hidden;
+  
+}
+.form-control.error input{
+    border: 1px solid red;
+}
+.form-control.error small{
+    visibility: visible;
+    color: red;
+} */
+
+/* ----------2----------------------------- */
+/* body {
+    background-color: #7a9d96;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border: 2px solid #fff;
+    background-color: #fff;
+    padding: 40px 0;
+    box-shadow: 3px 4px 9px #000;
+    
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.form h2 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 50px;
+    color: #00303f;
+}
+
+.form-control {
+    padding: 20px 0;
+}
+
+.form-control input {
+    display: block;
+    width: 300px;
+    padding: 5px 0;
+    margin-bottom: 2px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 3px solid #dcae1d;
+
+}
+
+.form-control input::placeholder {
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #cdcdcd;
+    font-family: 'lobster';
+}
+
+button {
+    width: 300px;
+    padding: 5px 0;
+    margin-top: 12px;
+    background-image: linear-gradient(#0dccea, #0d70ea);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    border: 0;
+    touch-action: manipulation;
+    text-transform: capitalize;
+}
+.form-control.error input{
+    border-bottom: 3px solid #d62828;
+}
+.form-control.success input{
+    border-bottom: 3px solid #008000;
+}
+.form-control small{
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+    color: #d62828;
+   
+} */
+
+/* practice */
+body{
+    background-color: var(--egg);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    
+}
+.container{
+    border:2px solid #f8eee7  ;
+    background-color: var(--sand);
+    width: 50vw;
+    padding: 30px 0px;
+    box-shadow: 3px 3px 7px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+
+}
+.form{
+    width: 50%;
+    
+}
+h2{
+    text-align: center;
+    padding: 10px 0 30px 0;
+    color: var(--grape);
+    font-size: 2rem;
+}
+.form-control input{
+    margin: 25px 0 3px 0;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--egg);
+    padding: 5px 0;
+    outline: none;
+    transition: all 0.3s linear;
+
+}
+.form-control input::placeholder{
+    font-family: Lobster ;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: rgb(182, 182, 182);
+}
+.form-control input:focus{
+    border-bottom: 2px solid var(--mustard);
+}
+button {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 12px;
+    background-image: linear-gradient(#0dccea, #0d70ea);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    border: 0;
+    touch-action: manipulation;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-radius: 6px ;
+    transition: all 0.3s linear;
+}
+button:hover{
+    color: #e9b000;
+    background-image: none;
+}
+.form-control small{
+    visibility: hidden;
+ 
+}
+.form-control.error input{
+    border-bottom: 2px solid #d62828;
+}
+.form-control.error small{
+    visibility: visible;
+    color:#d62828 ;
+    text-transform: capitalize;
+}
+.form-control.success input{
+    border-bottom: 2px solid #008000;
+}
+
+
+
