@@ -1,0 +1,301 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+ }
+
+:root {
+    --one: #2f4454;
+    --two: #4d9b9c;
+    --three: #d1e8e2;
+    --four: #bcfd4c;
+    --five: #f2d349;
+    --six: #ffe053;
+
+}
+
+body {
+    background-color:#372c2e;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+
+}
+
+.center-container {
+    box-shadow: 5px 6px 11px 4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 6px 11px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 6px 11px 4px rgba(0,0,0,0.75);
+    background-color: #92885b;
+    padding:5px 10px;
+    margin: 0 auto;
+
+}
+
+.movie-select {
+    text-align: center;
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--five);
+    
+}
+
+.movie-select select {
+    border: none;
+    outline: none;
+    
+    padding: 5px 15px;
+    font-size: 15px;
+    background-color:#372c2e ;
+    color: #fff;
+}   
+
+
+.showcase {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.showcase .seat {
+    background-color: var(--six);
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.showcase .seat.selected {
+    background-color: #86c232;
+}
+
+.showcase .seat.occupied {
+    background-color: #d14238;
+}
+
+.showcase label {
+    margin-right: 12px;
+}
+
+
+.movie-container {
+    padding: 10px 5px;
+}
+
+.movie-pic {
+    width: 450px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.movie-pic.avengers {
+    background: url(./img/avengers-endgame.jpg) center/cover no-repeat;
+}
+
+.movie-pic.joker {
+    background: url(./img/Joker.jpg) center/cover no-repeat;
+}
+
+.movie-pic.toy {
+    background: url(./img/toy\ story.jpg) center/cover no-repeat;
+}
+
+.movie-pic.lion {
+    background: url(./img/lion\ king.jpg) center/cover no-repeat;
+}
+
+
+
+.seat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.seat-container .seat {
+    font-size: 20px;
+}
+
+.seat i.selected {
+    color: #b1ff43;
+}
+.seat.occupied{
+    color:#d14238 ;
+    
+}
+
+.row .seat:not(.occupied) {
+    color: var(--six);
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.row .seat:not(.occupied):hover{
+    color: #fff;
+}
+
+.row .seat {
+    padding: 5px 8px;
+}
+
+.row .aisle {
+    margin-right: 15px;
+}
+
+.row .aisle-r {
+    margin-left: 15px;
+}
+
+p {
+    text-align: center;
+    margin: 8px 0 15px 0;
+    color: black;
+}
+p span{
+    color:#fff;
+    text-decoration: underline;
+    font-weight: bold;
+} 
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+.center-container{
+
+    padding: 10px 20px;
+    background-color: #4f6d7a;
+    box-shadow: 7px 6px 10px 1px rgba(2, 2, 2, 0.986);
+-webkit-box-shadow: 7px 6px 10px 1px rgba(3, 3, 3, 0.836);
+-moz-box-shadow: 7px 6px 10px 1px rgba(0, 0, 0, 0.836);
+}
+
+body{
+    background-color: #403d39; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: #fff;
+    margin: 0;
+}
+.movie-container{
+    margin: 20px 0;
+}
+.movie-container select{
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px;
+    outline: none;
+   
+}
+.seat{
+    background-color: #444451;
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.row{
+    display: flex;
+}
+.seat.selected{
+    background-color: #6feaf6;
+}
+.selected{
+    color: #6feaf6;
+}
+.seat.occupied{
+    background-color: #fff;
+}
+.seat:nth-of-type(2){
+    margin-right: 20px;
+}
+.seat:nth-last-of-type(2){
+    margin-left: 20px;
+}
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.showcase .seat:not(.occupied):hover{
+    cursor: default;
+    transform: scale(1);
+}
+.showcase{
+    background-color: #4d908e;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: rgb(13, 12, 17);
+    list-style-type: none ;
+    display: flex;
+    justify-content: center;
+}
+.showcase li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+.showcase li small{
+    margin-left: 2px;
+}
+
+.screen.avangers{
+  
+    height: 300px;
+    width: 400px;
+    background: url(./img/avengers-endgame.jpg) center/cover no-repeat;
+    margin-bottom: 10px;
+}
+.screen.toy{
+    background: url(./img/toy\ story.jpg) center/cover no-repeat ;
+    height: 300px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+.screen.joker{
+    background: url(./img/Joker.jpg) center/cover no-repeat ;
+    height: 300px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+.screen.lion{
+    background: url(./img/lion\ king.jpg) center/cover no-repeat ;
+    height: 300px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text span{
+    color: aqua;
+}
+p{
+    text-align: center;
+}
